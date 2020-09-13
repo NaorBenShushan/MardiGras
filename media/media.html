@@ -16,7 +16,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
     <link rel="stylesheet" href="../css/main.css">
+
     <!--AOS Library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -32,34 +35,65 @@
 </head>
 
 <body>
-    <!-- ** First Row - Header **  -->
-    <div data-aos="fade-down" data-aos-duration='1200'>
-        <div class="row">
-            <div class="navbar">
-                <div class="navbarLeft">
-                    <a href="../index.html" class="navbarBtn from-center homeNav">
-                        Home
-                    </a>
-                    <a href="../about/about.html" class="navbarBtn from-center regularNav">
-                        About
-                    </a>
-                    <a href="../media/media.html" class="navbarBtn from-center regularNav active">
-                        Media
-                    </a>
-                </div>
-                <div class="brand-logo">
-                    <a href="index.html"><img src="../imgs/logo2021.png" alt="home" width="150px"></a>
-                </div>
-                <div class="navbarRight">
-                    <a href="../sponsors/sponsors.html" class="navbarBtn from-center regularNav">
-                        Sponsors
-                    </a>
-                    <a href="../FAQ/faq.html" class="navbarBtn from-center regularNav">
-                        FAQ
-                    </a>
-                    <a href="../contact/contact.html" class="navbarBtn from-center contactNav">
-                        Contact
-                    </a>
+
+    <!-- First Row - Header - Mobile/Tablets -->
+    <div class="navBarSmallContainer">
+        <div class="navSmall">
+
+            <a href="../index.html">Home</a>
+            <div id="innerLinks">
+                <a href="../about/about.html" class="">
+                    About
+                </a>
+                <a href="../media/media.html" class="active">
+                    Media
+                </a>
+                <a href="../sponsors/sponsors.html" class="">
+                    Sponsors
+                </a>
+                <a href="../FAQ/faq.html" class="">
+                    FAQ
+                </a>
+                <a href="../contact/contact.html" class="">
+                    Contact
+                </a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="innerLinks()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+
+    <!-- ** First Row - Header - Desktop **  -->
+    <div class="navbarContainer">
+        <div data-aos="fade-down" data-aos-duration='1200'>
+            <div class="row">
+                <div class="navbar">
+                    <div class="navbarLeft">
+                        <a href="./index.html" class="navbarBtn from-center homeNav active">
+                            Home
+                        </a>
+                        <a href="./about/about.html" class="navbarBtn from-center regularNav">
+                            About
+                        </a>
+                        <a href="./media/media.html" class="navbarBtn from-center regularNav">
+                            Media
+                        </a>
+                    </div>
+                    <div class="brand-logo">
+                        <a href="index.html"><img src="./imgs/logo2021.png" alt="home" width="150px"></a>
+                    </div>
+                    <div class="navbarRight">
+                        <a href="./sponsors/sponsors.html" class="navbarBtn from-center regularNav">
+                            Sponsors
+                        </a>
+                        <a href="./FAQ/faq.html" class="navbarBtn from-center regularNav">
+                            FAQ
+                        </a>
+                        <a href="./contact/contact.html" class="navbarBtn from-center contactNav">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,29 +112,29 @@
                 <div class="imageFigure1im1">
                     <figure>
                         <a data-fancybox="gallery" href="./mediaGallery/normal/1.jpg"><img
-                                src="./mediaGallery/small/1.jpg"
-                                style="width: 100%; box-shadow: black 0px 1px px 2px;"></a>
+                                src="./mediaGallery/small/1.jpg" style="width: 100%; box-shadow: black 0px 1px px 2px;"
+                                class="img-fluid"></a>
                     </figure>
                 </div>
                 <div class="imageFigure1im2">
                     <figure>
                         <a data-fancybox="gallery" href="./mediaGallery/normal/2.jpg"><img
                                 src="./mediaGallery/small/2.jpg"
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;"></a>
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid"></a>
                     </figure>
                 </div>
                 <div class="imageFigure1im3">
                     <figure>
                         <a data-fancybox="gallery" href="./mediaGallery/normal/3.jpg"><img
                                 src="./mediaGallery/small/3.jpg"
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;"></a>
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid"></a>
                     </figure>
                 </div>
                 <div class="imageFigure1im4">
                     <figure>
                         <a data-fancybox="gallery" href="./mediaGallery/normal/4.jpg"><img
                                 src="./mediaGallery/small/4.jpg"
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;"></a>
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid"></a>
                     </figure>
                 </div>
 
@@ -109,14 +143,14 @@
                     <figure>
                         <a data-fancybox="gallery" href="./mediaGallery/normal/5.jpg"><img
                                 src="./mediaGallery/small/5.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;"></a>
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid"></a>
                     </figure>
                 </div>
                 <div class="imageFigure2im2">
                     <figure>
                         <a href="./mediaGallery/normal/6.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/6.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -124,7 +158,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/7.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/7.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -132,7 +166,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/8.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/8.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -143,7 +177,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/9.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/9.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -151,7 +185,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/10.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/10.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -159,7 +193,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/11.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/11.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -167,7 +201,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/12.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/12.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -177,7 +211,7 @@
                     <figure>
                         <a href="./mediaGallery/normal/13.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/13.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -185,23 +219,23 @@
                     <figure>
                         <a href="./mediaGallery/normal/14.jpg" data-fancybox="gallery">
                             <img src="./mediaGallery/small/14.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
                 <div class="imageFigure4im3">
                     <figure>
                         <a href="./mediaGallery/normal/15.jpg" data-fancybox="gallery">
-                            <img src="./mediaGallery/small/15.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                            <img src="./mediaGallery/small/15.jpg" alt="Responsive image"
+                                style="box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
                 <div class="imageFigure4im4">
                     <figure>
                         <a href="./mediaGallery/normal/16.jpg" data-fancybox="gallery">
-                            <img src="./mediaGallery/small/16.jpg" alt=""
-                                style=" width: 100%; box-shadow: black 0px 1px 4px 2px;">
+                            <img src="./mediaGallery/small/16.jpg" alt="Responsive image"
+                                style="box-shadow: black 0px 1px 4px 2px;" class="img-fluid">
                         </a>
                     </figure>
                 </div>
@@ -282,6 +316,10 @@
         </div>
     </div>
 
+
+    <!-- Mobile/Tablets -->
+
+
     <!-- Scripts -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -292,6 +330,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

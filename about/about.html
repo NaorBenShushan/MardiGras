@@ -25,42 +25,71 @@
 </head>
 
 <body>
+
+    <!-- First Row - Header - Mobile/Tablets -->
+    <div class="navBarSmallContainer">
+        <div class="navSmall">
+
+            <a href="../index.html">Home</a>
+            <div id="innerLinks">
+                <a href="../about/about.html" class="active">
+                    About
+                </a>
+                <a href="../media/media.html" class="">
+                    Media
+                </a>
+                <a href="../sponsors/sponsors.html" class="">
+                    Sponsors
+                </a>
+                <a href="../FAQ/faq.html" class="">
+                    FAQ
+                </a>
+                <a href="../contact/contact.html" class="">
+                    Contact
+                </a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="innerLinks()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+
     <!-- ** First Row - Header **  -->
-    <div data-aos="fade-down" data-aos-duration='1200'>
-        <div class="row">
-            <div class="navbar">
-                <div class="navbarLeft">
-                    <a href="../index.html" class="navbarBtn from-center homeNav">
-                        Home
-                    </a>
-                    <a href="../about/about.html" class="navbarBtn from-center regularNav active">
-                        About
-                    </a>
-                    <a href="../media/media.html" class="navbarBtn from-center regularNav">
-                        Media
-                    </a>
-                </div>
-                <div class="brand-logo">
-                    <a href="index.html"><img src="../imgs/logo2021.png" alt="home" width="150px"></a>
-                </div>
-                <div class="navbarRight">
-                    <a href="../sponsors/sponsors.html" class="navbarBtn from-center regularNav">
-                        Sponsors
-                    </a>
-                    <a href="../FAQ/faq.html" class="navbarBtn from-center regularNav">
-                        FAQ
-                    </a>
-                    <a href="../contact/contact.html" class="navbarBtn from-center contactNav">
-                        Contact
-                    </a>
+    <div class="navbarContainer">
+        <div data-aos="fade-down" data-aos-duration='1200'>
+            <div class="row">
+                <div class="navbar">
+                    <div class="navbarLeft">
+                        <a href="../index.html" class="navbarBtn from-center homeNav">
+                            Home
+                        </a>
+                        <a href="../about/about.html" class="navbarBtn from-center regularNav active">
+                            About
+                        </a>
+                        <a href="../media/media.html" class="navbarBtn from-center regularNav">
+                            Media
+                        </a>
+                    </div>
+                    <div class="brand-logo">
+                        <a href="index.html"><img src="../imgs/logo2021.png" alt="home" width="150px"></a>
+                    </div>
+                    <div class="navbarRight">
+                        <a href="../sponsors/sponsors.html" class="navbarBtn from-center regularNav">
+                            Sponsors
+                        </a>
+                        <a href="../FAQ/faq.html" class="navbarBtn from-center regularNav">
+                            FAQ
+                        </a>
+                        <a href="../contact/contact.html" class="navbarBtn from-center contactNav">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <br>
     <!-- ** Second Row ** -->
     <div class="row justify-content-center">
-        <div class="col-7 ">
+        <div class="col-8 ">
 
             <!-- Main Text -->
             <div class="aboutMainTextCenter">
@@ -70,7 +99,7 @@
                     <br>
                     <header>A Personal Invitation</header>
                     <br>
-                    <div class="card img-fluid mayorPhoto" style="width:200px; float: right;">
+                    <div class="card mayorPhoto" style="width: 50%; max-width: 200px; float: right;">
                         <img class="card-img" src="../imgs/about/mayor.jpg" alt="Mayor LaToya">
                         <p class="card-text" style="font-size: 0.9rem; text-align: center;"> Mayor of New Orleans
                         </p>
@@ -258,6 +287,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

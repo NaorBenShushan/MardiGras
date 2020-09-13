@@ -6158,9 +6158,12 @@ body {
     min-width: 35rem;
     margin: 0 auto;
   }
+  .indexMainCenter .indexMainText {
+    width: 22rem;
+  }
   .indexMainCenter .indexMainText .indexCenterImg {
-    display: block;
-    float: right;
+    width: 21.8rem;
+    margin: 1rem;
   }
   .indexMainCenter .indexMainText .indexMTHeader {
     font-size: 1.68rem;
@@ -6168,6 +6171,7 @@ body {
     font-weight: bolder;
   }
   .indexMainCenter .indexCarousel .carousel {
+    width: 21.8rem;
     display: block;
     font-family: Pattaya;
     margin-top: 4px;
@@ -6559,6 +6563,8 @@ body {
   .indexMainCenter .indexMainText .indexCenterImg {
     display: block;
     float: right;
+    width: 28.8rem;
+    margin: 1rem;
   }
   .indexMainCenter .indexMainText .indexMTHeader {
     font-size: 1.68rem;
@@ -7037,6 +7043,8 @@ body {
   }
   /* Center - Txt&Imgs */
   .indexMainCenter .indexMainText .indexCenterImg {
+    max-width: 31.25rem;
+    margin: 1rem;
     display: block;
     float: right;
   }

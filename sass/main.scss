@@ -16,8 +16,8 @@ $Beige: #fdfddc;
 $Black: #0d0d0d;
 
 /* Sizes */
-$headerSize: 1.68rem;
-$textSize: 1.2rem;
+$headerSize: 2rem;
+$textSize: 1.5rem;
 
 /* Fonts */
 $fontHen: "Henny Penny";
@@ -693,7 +693,6 @@ body {
   }
 
   /* ABOUT - TABLET */
-  /* ABOUT - TABLET */
 
   .aboutMainTextCenter {
     header {
@@ -1148,6 +1147,7 @@ body {
   /* Center - Txt&Imgs */
   .indexMainCenter {
     .indexMainText {
+      font-size: $textSize;
       .indexCenterImg {
         max-width: 31.25rem;
         margin: 1rem;
@@ -1198,6 +1198,7 @@ body {
       text-align: center;
     }
     .aboutMayorText {
+      font-size: $textSize;
       background-color: $Beige;
       font-size: $textSize;
       text-align: justify;
@@ -1217,8 +1218,16 @@ body {
       font-weight: bolder;
       color: $Purple;
     }
-    .aboutTextImages {
-      margin-right: 10px;
+    .aboutText {
+      font-size: $textSize;
+    }
+    .aboutCard {
+      margin: 20px;
+    }
+    .aboutCardText {
+      padding: 10px;
+      font-size: 1.2rem;
+      background-color: $Beige;
     }
   }
 
